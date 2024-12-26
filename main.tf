@@ -1,5 +1,7 @@
 provider "aws" {
-    region = "ap-southeast-2"
+  region = "ap-southeast-2"
+  access_key = $access_key
+  secret_key = $secret_key
 }
 
 resource "aws_instance" "sample"{
